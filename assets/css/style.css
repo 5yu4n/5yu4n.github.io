@@ -1,6 +1,7 @@
 :root {
-    --lamp-color: #ffdb70;
-    --lamp-glow: rgba(255, 219, 112, 0.15);
+    --lamp-color-rgb: 255, 219, 112;
+    --lamp-color: rgb(var(--lamp-color-rgb));
+    --lamp-glow: rgba(var(--lamp-color-rgb), 0.15);
     --text-main: #e2e8f0;
     --text-mute: #94a3b8;
 }
