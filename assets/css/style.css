@@ -53,93 +53,111 @@ html.lenis body {
     color: #ffdb70;
 }
 
+/* Proactive Markdown Styling - High Contrast & No Overflow */
+.prose {
+    color: #94a3b8 !important;
+    max-width: none !important;
+}
+
 .prose h1 {
-    font-size: 2.25rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 3rem !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
 }
 
 .prose h2 {
-    font-size: 1.875rem;
-    margin-top: 1.75rem;
-    margin-bottom: 0.75rem;
-    font-weight: 500;
-    color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 0.5rem;
+    font-size: 2.25rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .prose h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: var(--lamp-color);
-}
-
-.prose strong {
-    color: #ffffff;
-    font-weight: 600;
+    font-size: 1.75rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+    font-weight: 600 !important;
+    color: var(--lamp-color) !important;
 }
 
 .prose p {
-    color: #94a3b8;
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
-}
-
-/* Discord-like Code blocks */
-.prose pre {
-    background-color: #1a1b1e !important;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 8px !important;
-    padding: 1.25rem !important;
-    margin: 1.5rem 0 !important;
-    white-space: pre-wrap !important;
-    word-break: break-all !important;
+    font-size: 1.125rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 1.5rem !important;
     overflow-wrap: break-word !important;
 }
 
+/* Discord-like Code blocks Fix */
+.prose pre {
+    background-color: #1a1b1e !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 1.5rem 0 !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    overflow-x: hidden !important;
+}
+
 .prose code {
-    color: #ffdb70;
-    background-color: rgba(255, 219, 112, 0.1);
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.9em;
+    font-family: 'JetBrains Mono', monospace !important;
+    color: #ffdb70 !important;
+    background-color: rgba(255, 219, 112, 0.1) !important;
+    padding: 0.2rem 0.5rem !important;
+    border-radius: 6px !important;
+    font-size: 0.95em !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
 }
 
 .prose pre code {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    color: #e2e8f0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: #e2e8f0 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    display: block !important;
+    white-space: pre-wrap !important;
+}
+
+/* Fix for long strings in text */
+.prose * {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
 }
 
 .prose img {
-    border-radius: 12px;
-    margin: 2rem auto;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.prose ul, .prose ol {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.prose li {
-    margin-bottom: 0.5rem;
-    color: #94a3b8;
+    border-radius: 16px;
+    margin: 3rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .prose blockquote {
-    border-left: 4px solid var(--lamp-color);
-    background: rgba(255, 219, 112, 0.05);
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-    color: #e2e8f0;
+    border-left: 5px solid var(--lamp-color) !important;
+    background: rgba(255, 219, 112, 0.03) !important;
+    padding: 1.5rem 2rem !important;
+    margin: 2rem 0 !important;
+    font-style: normal !important;
+    color: #cbd5e1 !important;
+    border-radius: 0 12px 12px 0 !important;
+}
+
+.prose ul,
+.prose ol {
+    margin-bottom: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.prose li {
+    margin-bottom: 0.75rem !important;
+    font-size: 1.125rem !important;
 }
