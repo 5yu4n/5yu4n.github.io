@@ -110,20 +110,24 @@ class DayNightCycle {
 
         if (h >= 5 && h < 12) {
             tone = 'brightness(0.8) contrast(1.1) hue-rotate(-10deg) sepia(0.2) saturate(0.8)';
-            document.documentElement.style.setProperty('--lamp-color', '#ffdb70');
-            document.documentElement.style.setProperty('--lamp-glow', 'rgba(255, 219, 112, 0.15)');
+            const color = '255, 219, 112';
+            document.documentElement.style.setProperty('--lamp-color-rgb', color);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
         } else if (h >= 12 && h < 17) {
             tone = 'brightness(0.9) contrast(1.0) grayscale(0.2)';
-            document.documentElement.style.setProperty('--lamp-color', '#fff0a0');
-            document.documentElement.style.setProperty('--lamp-glow', 'rgba(255, 240, 160, 0.15)');
+            const color = '255, 240, 160';
+            document.documentElement.style.setProperty('--lamp-color-rgb', color);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
         } else if (h >= 17 && h < 20) {
             tone = 'brightness(0.6) contrast(1.2) hue-rotate(10deg) saturate(1.2)';
-            document.documentElement.style.setProperty('--lamp-color', '#ffaa5e');
-            document.documentElement.style.setProperty('--lamp-glow', 'rgba(255, 170, 94, 0.15)');
+            const color = '255, 170, 94';
+            document.documentElement.style.setProperty('--lamp-color-rgb', color);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
         } else {
             tone = 'brightness(0.5) contrast(1.3) hue-rotate(5deg) saturate(1.1)';
-            document.documentElement.style.setProperty('--lamp-color', '#ffdb70');
-            document.documentElement.style.setProperty('--lamp-glow', 'rgba(255, 219, 112, 0.15)');
+            const color = '255, 219, 112';
+            document.documentElement.style.setProperty('--lamp-color-rgb', color);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
         }
 
         if (this.bg) {
@@ -405,6 +409,13 @@ function renderWriteups(writeups) {
             if (!res.ok) throw new Error("Load failed");
             const text = await res.text();
             document.getElementById('markdown-content').innerHTML = marked.parse(text);
+
+            setTimeout(() => {
+                document.querySelectorAll('#markdown-content pre code').forEach((block) => {
+                    hljs.highlightElement(block);
+                });
+            }, 0);
+
             const list = document.getElementById('writeup-list-view');
             const detail = document.getElementById('writeup-detail-view');
             list.classList.add('opacity-0', 'pointer-events-none');

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syuan</title>
 
-    <!-- Define config BEFORE loading Tailwind to ensure it's picked up immediately -->
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script>
         tailwind.config = {
@@ -18,8 +17,8 @@
                         'rain-blue': '#1a2639',
                         'glass-surface': 'rgba(255, 255, 255, 0.03)',
                         'glass-border': 'rgba(255, 255, 255, 0.08)',
-                        'lamp-yellow': 'var(--lamp-color)',
-                        'lamp-glow': 'var(--lamp-glow)',
+                        'lamp-yellow': 'rgb(var(--lamp-color-rgb) / <alpha-value>)',
+                        'lamp-glow': 'rgba(var(--lamp-color-rgb), 0.15)',
                         'text-mute': '#94a3b8',
                         'text-light': '#e2e8f0',
                     },
@@ -38,7 +37,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Highlight.js for Discord-like code blocks -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/classic-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -50,15 +48,12 @@
 <body class="bg-night-bg text-text-light font-sans overflow-x-hidden selection:bg-lamp-yellow selection:text-night-bg"
     style="background-color: #020408;" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
 
-    <!-- Layer 0: Blur City Background -->
     <div class="fixed inset-0 z-[-2] bg-[url('assets/img/bg.png')] bg-cover bg-center bg-no-repeat blur-md opacity-60 transition-all duration-1000"
         id="city-bg"></div>
 
-    <!-- Layer 1: Vignette & darken -->
     <div class="fixed inset-0 z-[-1] bg-gradient-to-b from-night-bg/50 via-night-bg/40 to-night-bg pointer-events-none">
     </div>
 
-    <!-- Layer 2: Liquid Glass Canvas -->
     <canvas id="liquid-glass" class="fixed inset-0 z-0 pointer-events-none"></canvas>
 
     <nav class="fixed w-full z-50 top-0 left-0 py-6 transition-all duration-500" id="navbar">
@@ -167,7 +162,7 @@
                                 <span class="w-16 text-xs uppercase tracking-wider opacity-60">Python</span>
                                 <div class="h-1 flex-1 bg-white/10 rounded-full overflow-hidden">
                                     <div
-                                        class="h-full bg-lamp-yellow/70 w-[90%] shadow-[0_0_10px_rgba(255,219,112,0.3)]">
+                                        class="h-full bg-lamp-yellow/70 w-[90%] shadow-[0_0_10px_rgba(var(--lamp-color-rgb),0.3)]">
                                     </div>
                                 </div>
                             </div>
@@ -308,6 +303,5 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 
 </html>
