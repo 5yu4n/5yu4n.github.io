@@ -1,0 +1,188 @@
+{
+  "profile": {
+    "name": "Syuan",
+    "grade": "High School 2nd Year",
+    "role": "CTF Player (Web & AI)",
+    "intro": "A passionate CTF player and developer focusing on Web Security and Artificial Intelligence.",
+    "social": {
+      "github": "https://github.com/5yu4n",
+      "email": "morex.rick@gmail.com",
+      "twitter": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+    }
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "level": 90
+    },
+    {
+      "name": "NoSQL",
+      "level": 85
+    },
+    {
+      "name": "MySQL",
+      "level": 80
+    },
+    {
+      "name": "PHP",
+      "level": 75
+    }
+  ],
+  "experience": [
+    {
+      "title": "ICEDTEA Member",
+      "period": "Present",
+      "type": "Team"
+    },
+    {
+      "title": "B33F 50UP Member",
+      "period": "Present",
+      "type": "Team"
+    },
+    {
+      "title": "CRHC 30th Teaching",
+      "period": "2025-now",
+      "type": "Role"
+    },
+    {
+      "title": "CRHCCTF 1st General Coordinator",
+      "period": "2025",
+      "type": "Role"
+    }
+  ],
+  "achievements": [
+    {
+      "name": "NHNC 2nd",
+      "rank": "16th",
+      "note": "Taiwan 1st"
+    },
+    {
+      "name": "CDX 資安攻防推廣交流賽",
+      "rank": "1st Place",
+      "note": ""
+    },
+    {
+      "name": "Infosec Taiwan",
+      "rank": "6th",
+      "note": "Social Group 3rd"
+    },
+    {
+      "name": "THJCC 2025",
+      "rank": "11th",
+      "note": ""
+    },
+    {
+      "name": "HITCON 2025",
+      "rank": "29th",
+      "note": "With Icedtea (Taiwan 4th)"
+    },
+    {
+      "name": "ImaginaryCTF 2025",
+      "rank": "30th",
+      "note": "With Icedtea"
+    },
+    {
+      "name": "TFC CTF 2025",
+      "rank": "54th",
+      "note": "With Icedtea"
+    },
+    {
+      "name": "H7CTF 2025",
+      "rank": "137th",
+      "note": "With Icedtea"
+    },
+    {
+      "name": "SunshineCTF 2025",
+      "rank": "14th",
+      "note": "With Icedtea"
+    },
+    {
+      "name": "Osu! Gaming CTF 2025",
+      "rank": "8th",
+      "note": "With Icedtea"
+    },
+    {
+      "name": "Deadface 2025",
+      "rank": "295th",
+      "note": ""
+    },
+    {
+      "name": "MDCTF 2025",
+      "rank": "Problem Setter",
+      "note": ""
+    },
+    {
+      "name": "THJCC 2026",
+      "rank": "Problem Setter",
+      "note": ""
+    },
+    {
+      "name": "FhCTF 2026",
+      "rank": "Team 2nd",
+      "note": ""
+    },
+    {
+      "name": "Ais3 EOF 2026",
+      "rank": "52nd",
+      "note": ""
+    },
+    {
+      "name": "HITCON Zeroday 2025-09",
+      "rank": "3rd",
+      "note": ""
+    },
+    {
+      "name": "HITCON Zeroday 2025-10",
+      "rank": "5th",
+      "note": ""
+    },
+    {
+      "name": "HITCON Zeroday 2025-11",
+      "rank": "2nd",
+      "note": ""
+    },
+    {
+      "name": "HITCON Zeroday 2025-12",
+      "rank": "8th",
+      "note": ""
+    },
+    {
+      "name": "HITCON Zeroday 2025 Overall",
+      "rank": "8th",
+      "note": ""
+    },
+    {
+      "name": "CCST",
+      "rank": "Pass",
+      "note": "Perfect Score"
+    }
+  ],
+  "friends": [
+    {
+      "name": "Auron",
+      "link": "https://4ur0n.github.io/",
+      "desc": "he haven't write anything"
+    },
+    {
+      "name": "legendyang",
+      "link": "https://blog.nicewhite.xyz/",
+      "desc": "he haven't write anything"
+    },
+    {
+      "name": "jackoha",
+      "link": "https://jackoha.github.io/",
+      "desc": "he haven't write anything"
+    },
+    {
+      "name": "UmmIt Kin",
+      "link": "https://l.ummit.dev/",
+      "desc": "老婆"
+    },
+    {
+      "name": "淳宇淳蠢",
+      "link": "https://chuen666666.github.io/",
+      "desc": "he haven't write anything"
+    }
+  ]
+}
+

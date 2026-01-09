@@ -1,0 +1,69 @@
+:root {
+    --lamp-color: #ffdb70;
+    --lamp-glow: rgba(255, 219, 112, 0.15);
+    --text-main: #e2e8f0;
+    --text-mute: #94a3b8;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020408;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a2639;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1a2639 #020408;
+}
+
+::selection {
+    background: rgba(255, 219, 112, 0.2);
+    color: #ffdb70;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose strong {
+    color: #e2e8f0;
+}
+
+.prose p {
+    color: #94a3b8;
+}
+
+.prose code {
+    color: #ffdb70;
+}

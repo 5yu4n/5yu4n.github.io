@@ -1,0 +1,39 @@
+[
+    {
+        "id": "welcome",
+        "title": "Welcome to my Blog",
+        "date": "2026-01-08",
+        "category": "Web",
+        "tags": [
+            "General",
+            "Intro"
+        ],
+        "file": "writeups/welcome.md",
+        "desc": "An introduction to my new writeup platform."
+    },
+    {
+        "id": "sample-web",
+        "title": "Solving a tricky LFI",
+        "date": "2025-12-25",
+        "category": "Web",
+        "tags": [
+            "LFI",
+            "PHP"
+        ],
+        "file": "writeups/welcome.md",
+        "desc": "A placeholder guide on how I solved an LFI challenge."
+    },
+    {
+        "id": "scist",
+        "title": "SCIST Linux CTF Writeup",
+        "date": "2024/10/28",
+        "category": "Linux",
+        "tags": [
+            "SCIST"
+        ],
+        "file": "writeups/SCIST-Linux-CTF-Writeup.md",
+        "desc": "Scist homework writeup"
+    }
+
+]
+
