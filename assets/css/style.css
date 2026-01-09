@@ -54,7 +54,6 @@ html.lenis body {
     color: #ffdb70;
 }
 
-/* Proactive Markdown Styling - High Contrast & No Overflow */
 .prose {
     color: #94a3b8 !important;
     max-width: none !important;
@@ -94,7 +93,6 @@ html.lenis body {
     overflow-wrap: break-word !important;
 }
 
-/* Discord-like Code blocks Fix */
 .prose pre {
     background-color: #1a1b1e !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -109,8 +107,8 @@ html.lenis body {
 
 .prose code {
     font-family: 'JetBrains Mono', monospace !important;
-    color: #ffdb70 !important;
-    background-color: rgba(255, 219, 112, 0.1) !important;
+    color: var(--lamp-color) !important;
+    background-color: rgba(var(--lamp-color-rgb), 0.1) !important;
     padding: 0.2rem 0.5rem !important;
     border-radius: 6px !important;
     font-size: 0.95em !important;
@@ -129,7 +127,6 @@ html.lenis body {
     white-space: pre-wrap !important;
 }
 
-/* Fix for long strings in text */
 .prose * {
     max-width: 100% !important;
     overflow-wrap: break-word !important;
