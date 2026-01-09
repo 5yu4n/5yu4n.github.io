@@ -1,39 +1,144 @@
 [
     {
-        "id": "welcome",
-        "title": "Welcome to my Blog",
-        "date": "2026-01-08",
-        "category": "Web",
+        "id": "高中跨校資安實務素養體驗賽-團體賽題目",
+        "title": "高中跨校資安實務素養體驗賽-團體賽題目writeup",
+        "date": "2025/11/06",
+        "category": "Misc",
         "tags": [
-            "General",
-            "Intro"
+            "CTF",
+            "Misc",
+            "Forensics"
         ],
-        "file": "writeups/welcome.md",
-        "desc": "An introduction to my new writeup platform."
+        "file": "writeups/高中跨校資安實務素養體驗賽-團體賽題目.md",
+        "desc": "高中跨校資安實務素養體驗賽-團體賽題目 writeup"
     },
     {
-        "id": "sample-web",
-        "title": "Solving a tricky LFI",
-        "date": "2025-12-25",
-        "category": "Web",
+        "id": "高中跨校資安實務素養體驗賽-個人賽2025",
+        "title": "高中跨校資安實務素養體驗賽-個人賽2025 writeup",
+        "date": "2025/10/30",
+        "category": "Crypto",
         "tags": [
-            "LFI",
-            "PHP"
+            "CTF",
+            "PicoCTF",
+            "Vigenere",
+            "Caesar"
         ],
-        "file": "writeups/welcome.md",
-        "desc": "A placeholder guide on how I solved an LFI challenge."
+        "file": "writeups/高中跨校資安實務素養體驗賽-個人賽2025.md",
+        "desc": "高中跨校資安實務素養體驗賽-個人賽2025 解題紀錄，包含 Vigenere 與 Caesar 加密演算法實作。"
     },
     {
-        "id": "scist",
+        "id": "open-esec",
+        "title": "openESEC Writeup",
+        "date": "2025/09/30",
+        "category": "Crypto",
+        "tags": [
+            "openESEC",
+            "Crypto",
+            "Reverse"
+        ],
+        "file": "writeups/openESEC.md",
+        "desc": "Solutions for openESEC challenges, focusing on RSA (mind-the-gap) and Reverse Engineering (mvmory)."
+    },
+    {
+        "id": "virtualbox-kali",
+        "title": "VirtualBox Install Kali Linux Tutorial",
+        "date": "2025/09/20",
+        "category": "Tutorial",
+        "tags": [
+            "VirtualBox",
+            "Kali",
+            "Linux"
+        ],
+        "file": "writeups/VirtualBox.md",
+        "desc": "A step-by-step guide for installing Kali Linux on VirtualBox for cybersecurity beginners."
+    },
+    {
+        "id": "scist-2025-final",
+        "title": "SCIST 2025 Final Writeup",
+        "date": "2025/07/20",
+        "category": "Misc",
+        "tags": [
+            "SCIST",
+            "Final",
+            "CTF"
+        ],
+        "file": "writeups/SCIST-2025-final.md",
+        "desc": "A comprehensive collection of solutions for SCIST 2025 Final, including Reverse, Pwn, Crypto, and Web challenges."
+    },
+    {
+        "id": "scist-reverse",
+        "title": "SCIST Reverse Writeup",
+        "date": "2025/06/08",
+        "category": "Reverse",
+        "tags": [
+            "SCIST",
+            "Reverse",
+            "XOR"
+        ],
+        "file": "writeups/scist-xreverse-writeup.md",
+        "desc": "Detailed writeups for SCIST Reverse challenges, including image byte manipulation and XOR decryption."
+    },
+    {
+        "id": "b33f-50up",
+        "title": "B33F-50μp NCKUCTF Writeup",
+        "date": "2025/06/08",
+        "category": "Web",
+        "tags": [
+            "NCKUCTF",
+            "Web",
+            "LFI"
+        ],
+        "file": "writeups/B33F-50μp-writeup.md",
+        "desc": "A massive collection of Web vulnerability writeups from NCKUCTF, covering LFI, RCE, SSRF, and XSS."
+    },
+    {
+        "id": "spell-whisperer",
+        "title": "Spell Whisperer - AI Prompt Injection",
+        "date": "2025/04/28",
+        "category": "AI Security",
+        "tags": [
+            "AI",
+            "Prompt Injection",
+            "LLM"
+        ],
+        "file": "writeups/Spell-Whisperer-writeup.md",
+        "desc": "Researching a universal bypass for AI prompt injection challenges using interaction-config tags."
+    },
+    {
+        "id": "thjcc-2025",
+        "title": "THJCC 2025 Writeup",
+        "date": "2025/04/25",
+        "category": "Web",
+        "tags": [
+            "THJCC",
+            "CTF"
+        ],
+        "file": "writeups/THJCC-2025.md",
+        "desc": "Solutions for THJCC 2025 challenges, featuring Web Exploitation, Misc, and Warmup tasks."
+    },
+    {
+        "id": "scist-mid-ctf",
+        "title": "SCIST MID CTF Writeup",
+        "date": "2025/02/18",
+        "category": "Web",
+        "tags": [
+            "SCIST",
+            "MID",
+            "CTF"
+        ],
+        "file": "writeups/SCIST-CTF-Writeup.md",
+        "desc": "Writeups for SCIST Mid-term CTF covering Web, NoSQL Injection, LCG Cipher, and Image Forensics."
+    },
+    {
+        "id": "scist-linux",
         "title": "SCIST Linux CTF Writeup",
         "date": "2024/10/28",
         "category": "Linux",
         "tags": [
-            "SCIST"
+            "SCIST",
+            "Linux"
         ],
         "file": "writeups/SCIST-Linux-CTF-Writeup.md",
-        "desc": "Scist homework writeup"
+        "desc": "Scist homework writeup addressing netcat, wget privilege escalation and gobuster scanning."
     }
-
 ]
-
