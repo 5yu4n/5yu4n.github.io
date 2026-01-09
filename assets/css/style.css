@@ -53,17 +53,93 @@ html.lenis body {
     color: #ffdb70;
 }
 
-.prose h1,
-.prose h2,
-.prose h3,
+.prose h1 {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.prose h2 {
+    font-size: 1.875rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--lamp-color);
+}
+
 .prose strong {
-    color: #e2e8f0;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .prose p {
     color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+/* Discord-like Code blocks */
+.prose pre {
+    background-color: #1a1b1e !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    margin: 1.5rem 0 !important;
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
 }
 
 .prose code {
     color: #ffdb70;
+    background-color: rgba(255, 219, 112, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.prose pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.prose img {
+    border-radius: 12px;
+    margin: 2rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prose ul, .prose ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+}
+
+.prose blockquote {
+    border-left: 4px solid var(--lamp-color);
+    background: rgba(255, 219, 112, 0.05);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #e2e8f0;
 }
