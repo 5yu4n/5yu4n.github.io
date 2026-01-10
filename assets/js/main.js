@@ -110,7 +110,7 @@ class DayNightCycle {
 
         if (h >= 5 && h < 12) {
             tone = 'brightness(0.8) contrast(1.1) hue-rotate(-10deg) sepia(0.2) saturate(0.8)';
-            const color = '255 219 112';
+            const color = '255 219 112'; // Space-separated for Tailwind support
             document.documentElement.style.setProperty('--lamp-color-rgb', color);
             document.documentElement.style.setProperty('--lamp-glow', `rgba(${color.split(' ').join(', ')}, 0.15)`);
         } else if (h >= 12 && h < 17) {
@@ -406,9 +406,9 @@ function renderWriteups(writeups) {
     window.viewWriteup = async (file) => {
         try {
             // Encode the path to handle Chinese characters and special symbols
-            const encodedFile = file.split('/').map(segment => encodeURIComponent(segment)).join('/');
-            const res = await fetch(encodedFile);
-            if (!res.ok) throw new Error("Load failed");
+            const res = await fetch(encodeURI(file));
+            // Check for ok status or 0 (common for file:// protocol)
+            if (!res.ok && res.status !== 0) throw new Error("Load failed");
             const text = await res.text();
             document.getElementById('markdown-content').innerHTML = marked.parse(text);
 
