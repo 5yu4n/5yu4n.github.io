@@ -110,24 +110,24 @@ class DayNightCycle {
 
         if (h >= 5 && h < 12) {
             tone = 'brightness(0.8) contrast(1.1) hue-rotate(-10deg) sepia(0.2) saturate(0.8)';
-            const color = '255, 219, 112';
+            const color = '255 219 112';
             document.documentElement.style.setProperty('--lamp-color-rgb', color);
-            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color.split(' ').join(', ')}, 0.15)`);
         } else if (h >= 12 && h < 17) {
             tone = 'brightness(0.9) contrast(1.0) grayscale(0.2)';
-            const color = '255, 240, 160';
+            const color = '255 240 160';
             document.documentElement.style.setProperty('--lamp-color-rgb', color);
-            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color.split(' ').join(', ')}, 0.15)`);
         } else if (h >= 17 && h < 20) {
             tone = 'brightness(0.6) contrast(1.2) hue-rotate(10deg) saturate(1.2)';
-            const color = '255, 170, 94';
+            const color = '255 170 94';
             document.documentElement.style.setProperty('--lamp-color-rgb', color);
-            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color.split(' ').join(', ')}, 0.15)`);
         } else {
             tone = 'brightness(0.5) contrast(1.3) hue-rotate(5deg) saturate(1.1)';
-            const color = '255, 219, 112';
+            const color = '255 219 112';
             document.documentElement.style.setProperty('--lamp-color-rgb', color);
-            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color}, 0.15)`);
+            document.documentElement.style.setProperty('--lamp-glow', `rgba(${color.split(' ').join(', ')}, 0.15)`);
         }
 
         if (this.bg) {
@@ -405,7 +405,9 @@ function renderWriteups(writeups) {
     });
     window.viewWriteup = async (file) => {
         try {
-            const res = await fetch(file);
+            // Encode the path to handle Chinese characters and special symbols
+            const encodedFile = file.split('/').map(segment => encodeURIComponent(segment)).join('/');
+            const res = await fetch(encodedFile);
             if (!res.ok) throw new Error("Load failed");
             const text = await res.text();
             document.getElementById('markdown-content').innerHTML = marked.parse(text);
