@@ -405,7 +405,7 @@ function renderWriteups(writeups) {
     });
     window.viewWriteup = async (file) => {
         try {
-            const res = await fetch(file);
+            const res = await fetch(encodeURI(file));
             if (!res.ok) throw new Error("Load failed");
             const text = await res.text();
             document.getElementById('markdown-content').innerHTML = marked.parse(text);
