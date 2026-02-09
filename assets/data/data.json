@@ -127,6 +127,11 @@
       "note": ""
     },
     {
+      "name": "LACTF 2026",
+      "rank": "9th",
+      "note": "With Icedtea"
+    },
+    {
       "name": "HITCON Zeroday 2025-09",
       "rank": "3rd",
       "note": ""
