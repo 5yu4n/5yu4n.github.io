@@ -1,12 +1,13 @@
 [
     {
-        "id": "THJCC2026writeup",
+        "id": "thjcc2026writeup",
         "title": "THJCC 2026 writeup",
         "date": "2026/2/22",
         "category": "Web",
         "tags": [
             "CTF",
-            "Web"
+            "Web",
+            "THJCC"
         ],
         "file": "writeups/THJCC2026writeup.md",
         "desc": "THJCC 2026 writeup"
@@ -155,5 +156,6 @@
     }
 
 ]
+
 
 
