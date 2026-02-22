@@ -1,5 +1,17 @@
 [
     {
+        "id": "THJCC2026writeup",
+        "title": "THJCC 2026 writeup",
+        "date": "2026/2/22",
+        "category": "Web",
+        "tags": [
+            "CTF",
+            "Web"
+        ],
+        "file": "THJCC2026writeup.md",
+        "desc": "THJCC 2026 writeup"
+    },
+    {
         "id": "高中跨校資安實務素養體驗賽-團體賽題目",
         "title": "高中跨校資安實務素養體驗賽-團體賽題目writeup",
         "date": "2025/11/06",
@@ -141,4 +153,5 @@
         "file": "writeups/SCIST-Linux-CTF-Writeup.md",
         "desc": "Scist homework writeup addressing netcat, wget privilege escalation and gobuster scanning."
     }
+
 ]
