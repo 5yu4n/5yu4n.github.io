@@ -8,7 +8,7 @@
             "CTF",
             "Web"
         ],
-        "file": "THJCC2026writeup.md",
+        "file": "writeups/THJCC2026writeup.md",
         "desc": "THJCC 2026 writeup"
     },
     {
@@ -155,4 +155,5 @@
     }
 
 ]
+
 
