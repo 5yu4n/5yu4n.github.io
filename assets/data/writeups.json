@@ -1,18 +1,5 @@
 [
     {
-        "id": "b33f-50up1",
-        "title": "B33F-50μp NCKUCTF Writeup",
-        "date": "2025/06/08",
-        "category": "Web",
-        "tags": [
-            "NCKUCTF",
-            "Web",
-            "LFI"
-        ],
-        "file": "writeups/B33F-50μp-writeup.md",
-        "desc": "A massive collection of Web vulnerability writeups from NCKUCTF, covering LFI, RCE, SSRF, and XSS."
-    },
-    {
         "id": "thjcc2026writeup",
         "title": "THJCC 2026 writeup",
         "date": "2026/2/22",
@@ -36,7 +23,7 @@
             "Forensics"
         ],
         "file": "writeups/highschoolchallengeteam.md",
-        "desc": "高中跨校資安實務素養體驗賽-團體賽題目 writeup"
+        "desc": ""
     },
     {
         "id": "highschoolchallengepersonal",
@@ -50,7 +37,7 @@
             "Caesar"
         ],
         "file": "writeups/highschoolchallengepersonal.md",
-        "desc": "高中跨校資安實務素養體驗賽-個人賽2025 解題紀錄，包含 Vigenere 與 Caesar 加密演算法實作。"
+        "desc": ""
     },
     {
         "id": "open-esec",
@@ -169,6 +156,7 @@
     }
 
 ]
+
 
 
 
