@@ -48,7 +48,12 @@
       "title": "CRHCCTF 1st General Coordinator",
       "period": "2025",
       "type": "Role"
-    }
+    },
+    {
+      "title": "CVE-2026-34525",
+      "period": "2026",
+      "type": "CVE"
+    },
   ],
   "achievements": [
     {
