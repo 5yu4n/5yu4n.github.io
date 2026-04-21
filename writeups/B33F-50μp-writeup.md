@@ -178,7 +178,7 @@ NCKUCTF{d19_70015_15_n1c3_bu7_1_c4n7_s33!!}
 
 Dig waf 3⛏️
 ```
-'$(sed${IFS}-n${IFS}1,10p${IFS}/????_o2837ry)'
+'$(sed${IFS}''${IFS}/????_o2837ry)'
 ```
 Dig waf 4⛏️
 ```
