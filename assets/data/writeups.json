@@ -1,5 +1,21 @@
 [
     {
+        "id": "ais3preexam2026",
+        "title": "AIS3 Pre-Exam 2026 writeup",
+        "date": "2026/5/16",
+        "category": "Web",
+        "tags": [
+            "CTF",
+            "Web",
+            "AIS3",
+            "Reverse",
+            "Pwn",
+            "Misc"
+        ],
+        "file": "writeups/ais3preexam2026.md",
+        "desc": "AIS3 Pre-Exam 2026 writeup"
+    },
+    {
         "id": "thjcc2026writeup",
         "title": "THJCC 2026 writeup",
         "date": "2026/2/22",
