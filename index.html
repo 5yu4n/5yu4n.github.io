@@ -82,7 +82,8 @@
                 </button>
             </div>
 
-            <button id="menu-btn" class="md:hidden ios-glass-btn" aria-label="Menu">
+            <button id="menu-btn" class="md:hidden ios-glass-btn" aria-label="Menu" aria-expanded="false"
+                aria-controls="mobile-menu">
                 <i class="fas fa-bars text-lg opacity-80"></i>
             </button>
         </div>
@@ -141,27 +142,27 @@
                         <span class="ml-auto text-xs text-text-mute font-mono opacity-50">user@night-rain:~</span>
                     </div>
 
-                    <div class="p-8 font-mono text-sm leading-8 text-text-mute/80">
-                        <p class="flex gap-3">
+                    <div id="hero-terminal" class="p-8 font-mono text-sm leading-8 text-text-mute/80">
+                        <p class="flex gap-3" data-terminal-line>
                             <span class="text-lamp-yellow">➜</span>
                             <span class="text-white/90">whoami</span>
                         </p>
-                        <p class="mt-2 pl-6 border-l-2 border-white/5">
+                        <p class="mt-2 pl-6 border-l-2 border-white/5" data-terminal-line>
                             Name: Syuan<br>
                             Status: <span class="text-emerald-400/80">Online (Rainy)</span><br>
                             Team: Icedtea, B33f<br>
                             Loc: Taiwan
                         </p>
 
-                        <p class="flex gap-3 mt-6">
+                        <p class="flex gap-3 mt-6" data-terminal-line>
                             <span class="text-lamp-yellow">➜</span>
                             <span class="text-white/90">skills --list</span>
                         </p>
-                        <div class="mt-2 pl-6 space-y-3">
+                        <div class="mt-2 pl-6 space-y-3" data-terminal-line>
                             <div class="flex items-center gap-4">
                                 <span class="w-16 text-xs uppercase tracking-wider opacity-60">Python</span>
                                 <div class="h-1 flex-1 bg-white/10 rounded-full overflow-hidden">
-                                    <div
+                                    <div data-skill-level="90"
                                         class="h-full bg-lamp-yellow/70 w-[90%] shadow-[0_0_10px_rgba(var(--lamp-color-rgb),0.3)]">
                                     </div>
                                 </div>
@@ -169,13 +170,14 @@
                             <div class="flex items-center gap-4">
                                 <span class="w-16 text-xs uppercase tracking-wider opacity-60">Web Sec</span>
                                 <div class="h-1 flex-1 bg-white/10 rounded-full overflow-hidden">
-                                    <div class="h-full bg-blue-300/60 w-[85%] shadow-[0_0_10px_rgba(147,197,253,0.3)]">
+                                    <div data-skill-level="85"
+                                        class="h-full bg-blue-300/60 w-[85%] shadow-[0_0_10px_rgba(147,197,253,0.3)]">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <p class="flex gap-3 mt-6 animate-pulse">
+                        <p class="flex gap-3 mt-6 animate-pulse" data-terminal-line>
                             <span class="text-lamp-yellow">➜</span>
                             <span class="w-2 h-5 bg-white/50 block"></span>
                         </p>
@@ -301,6 +303,8 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@4.5.0/dist/bundles/anime.umd.min.js"></script>
+    <script src="assets/js/motion.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
