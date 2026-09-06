@@ -321,6 +321,7 @@ async function loadData() {
     try {
         const res = await fetch('assets/data/data.json');
         const data = await res.json();
+        renderSocial(data.profile?.social);
         renderExperience(data.experience);
         renderAchievements(data.achievements);
         renderFriends(data.friends);
@@ -331,6 +332,21 @@ async function loadData() {
         } catch (e) { console.log('No Writeups'); }
     } catch (e) {
         console.error("Failed to load data", e);
+    }
+}
+
+function renderSocial(social) {
+    if (!social) return;
+    const map = {
+        'contact-github': social.github,
+        'contact-twitter': social.twitter,
+        'contact-email': social.email
+            ? (social.email.startsWith('mailto:') ? social.email : `mailto:${social.email}`)
+            : null,
+    };
+    for (const [id, url] of Object.entries(map)) {
+        const el = document.getElementById(id);
+        if (el && url) el.href = url;
     }
 }
 
